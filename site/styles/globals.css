@@ -1,0 +1,25 @@
+/* globals.css - minimal styling */
+:root{--bg:#f7f7fb; --card:#fff; --text:#0f172a; --muted:#6b7280; --accent:#6366f1; --danger:#ef4444}
+html,body,#__next{height:100%}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--text);}
+.container{max-width:900px;margin:40px auto;padding:20px}
+h1{margin:0 0 12px}
+.todo .toolbar{display:flex;gap:12px;align-items:center}
+.add-form{flex:1;display:flex;gap:8px}
+.add-form input{flex:1;padding:10px;border-radius:8px;border:1px solid #e6e9f2}
+.add-form button{padding:10px 12px;border-radius:8px;background:var(--accent);color:#fff;border:none}
+.tools{display:flex;gap:8px;align-items:center}
+.tools button{padding:8px 10px;border-radius:8px;border:1px solid transparent;background:transparent;cursor:pointer}
+.tools .import input{display:none}
+.filters{display:flex;gap:8px;align-items:center;margin-top:12px}
+.filters .active{background:var(--accent);color:#fff;border-radius:999px;padding:6px 10px}
+.list{list-style:none;padding:0;margin:12px 0;display:flex;flex-direction:column;gap:8px}
+.item{display:flex;justify-content:space-between;align-items:center;padding:10px;border-radius:8px;background:var(--card);box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+.item.done .text{opacity:0.6;text-decoration:line-through}
+.actions button.danger{color:var(--danger);background:transparent;border:none}
+.status{color:var(--muted);margin-top:8px}
+
+/* Dark */
+:root.dark{--bg:#071126;--card:#0b1220;--text:#e6eef8;--muted:#9aa9bf;--accent:#7c5cff;--danger:#ff7b7b}
+
+@media (max-width:600px){.container{margin:20px;padding:12px}}
